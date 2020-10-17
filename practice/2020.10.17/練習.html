@@ -12,17 +12,27 @@
             <br>
             等等來看點動畫提神好ㄌ
         </p>
-        <button id="btn1" style="font-size: 15pt;">有什麼不錯看的呢？</button>
-        <p id="test1" style="color:yellow;background-color:black;font-size: 25pt;">這季的番我只推薦<strong>ゴールデンカムイ</strong>
+        <button id="btn1" style="font-size: 15pt;">該看甚麼呢？</button>
+        <p id="test1" style="color:rgb(10, 84, 182);font-size: 25pt;">
         </p>
 
         <script>
-            //$("#test1").css("background-color","blue");
+            //$("#test1").css("","");
             $("#test1").hide();
+            var x=0;
             $("#btn1").click(function(){
-                $("#test1").show();
-                alert('快來看看ㄅ！');
-                window.open('https://ani.gamer.com.tw/animeVideo.php?sn=18523')
+                x=x+1;
+                if(x%3===1){
+                    $("#test1").show();
+                    alert('前菜——爆笑地獄');
+                    window.open('https://www.youtube.com/watch?v=J9ShpF5xveM&list=PL12UaAf_xzfoz9LN_6KZX5jmA3u7Z8PYe')
+                }else if(x%3===2){
+                    alert('正餐——胃痛之國');
+                    window.open('https://www.youtube.com/watch?v=pe6sNcWlFxo&list=PL12UaAf_xzfrYglIzLjQoN1aGxDZrag1T')
+                }else{
+                    alert('甜點——番茄醬特輯');
+                    window.open('https://www.youtube.com/watch?v=NS5pn6Y2L1s&list=PL12UaAf_xzfrMeRvKrk2OnxkpTArc_4HN')
+                }
             });
         </script>
     </body>
