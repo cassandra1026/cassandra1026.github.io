@@ -1,0 +1,29 @@
+
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/jquery-ui-git.css">
+        <link rel="stylesheet" href="引.css">
+
+    </head>
+    <body>
+        <p id="font1" style="color:rgb(1, 73, 64);">好睏ㄛ，好想睡覺
+            <br>
+            等等來看點動畫提神好ㄌ
+        </p>
+        <button id="btn1" style="font-size: 15pt;">有什麼不錯看的呢？</button>
+        <p id="test1" style="color:yellow;background-color:black;font-size: 25pt;">這季的番我只推薦<strong>ゴールデンカムイ</strong>
+        </p>
+
+        <script>
+            //$("#test1").css("background-color","blue");
+            $("#test1").hide();
+            $("#btn1").click(function(){
+                $("#test1").show();
+                alert('快來看看ㄅ！');
+                window.open('https://ani.gamer.com.tw/animeVideo.php?sn=18523')
+            });
+        </script>
+    </body>
+</html>
